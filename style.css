@@ -1,0 +1,284 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Poppins", Arial, sans-serif;
+  background-color: #000;
+  color: #fff;
+}
+
+span {
+  color: #ff6b00;
+}
+
+.navbar {
+  padding: 25px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: sticky;
+  top: 0;
+  z-index: 100;
+}
+
+.menu {
+  display: flex;
+  gap: 80px;
+}
+
+.botao-navbar {
+  color: white;
+  font-weight: bold;
+  border-radius: 15px;
+  padding: 15px 30px;
+  display: inline-block;
+  background-color: #ff6b00;
+  transition:transform 0.3s ease,color 0.3s ease;
+}
+
+.botao-navbar:hover {
+  color: black;
+  transform: scale(1.01);
+}
+
+a {
+  text-decoration: none;
+  color: #fff;
+  transform: scale(1.05);
+}
+
+li {
+  list-style-type: none;
+  text-decoration: none;
+}
+
+a:hover {
+  color: #ff6b00;
+  transition: 0.2s ease;
+}
+
+.hero {
+  height: 90vh;
+  display: flex;
+  align-items: center;
+  padding: 0 60px;
+  background-image: url("burger.jpg");
+  background-size: cover;
+  background-position: center;
+}
+
+.hero-content {
+  max-width: 500px;
+}
+
+.hero h1 {
+  font-size: 56px;
+  font-weight: 800;
+  line-height: 1.1;
+  margin-bottom: 20px;
+}
+
+.hero p {
+  font-size: 16px;
+  color: #ddd;
+  margin-bottom: 30px;
+}
+
+.botao-hero {
+  color: white;
+  display: inline-block;
+  background-color: #ff6b00;
+  padding: 15px 30px;
+  border-radius: 15px;
+  font-weight: bold;
+  transition: transform 0.3s ease;
+}
+
+.botao-hero:hover {
+  transform: scale(1.01);
+  color: black;
+}
+
+.cardapio-content {
+  height: 90vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 0 60px;
+  gap: 50px;
+  flex-wrap: wrap;
+  background-image: url("maxburger.jpg");
+  background-size: cover;
+  background-position: center;
+}
+
+.image-content,
+.card-content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 10px 14px;
+}
+
+.card {
+  width: 320px;
+  border-radius: 25px;
+  background-color: #fff;
+}
+
+.card-image {
+  position: relative;
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  background-color: #fff;
+}
+
+.card-image .card-img {
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+  border-radius: 50%;
+  border: 4px solid #000;
+}
+
+.image-content {
+  position: relative;
+  row-gap: 5px;
+  padding: 25px 0;
+}
+
+.name {
+  margin-bottom: 10px;
+  font-size: 18px;
+  font-weight: 600;
+  color: #000;
+}
+
+.descripition {
+  margin-bottom: 10px;
+  color: #707070;
+  font-size: 14px;
+  text-align: center;
+}
+
+.card-button {
+  border: none;
+  color: white;
+  display: inline-block;
+  background-color: #ff6b00;
+  padding: 15px 30px;
+  border-radius: 15px;
+  font-weight: bold;
+  transition: transform 0.3s ease;
+  margin: 14px;
+}
+
+.card-button:hover {
+  transform: scale(1.02);
+  color: black;
+}
+
+.overlay {
+  position: absolute;
+  left: 0;
+  top: 0;
+  height: 100%;
+  width: 100%;
+  background-color: #664c32;
+  border-radius: 25px 25px 0 25px;
+}
+
+.overlay::before,
+.overlay::after {
+  content: "";
+  position: absolute;
+  height: 40px;
+  width: 40px;
+  background-color: #664c32;
+  right: 0;
+  bottom: -40px;
+}
+
+.overlay::after {
+  border-radius: 0 25px 0 0;
+  background-color: #fff;
+}
+
+.about{
+background-color: #664c32;
+padding: 32px;
+}
+
+.about-content{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 60px;
+    flex-wrap: wrap;
+}
+
+.about-img{
+    max-width: 320px;
+}
+
+.about-texto{
+ max-width: 500px;
+ font-size: 18px;
+ line-height: 1.6;
+ color: #fff;
+}
+
+.footer{
+    background-color: #664c32;
+    padding: 60px;
+    display: flex;
+    justify-content: space-around;
+    flex-wrap:wrap;
+    gap: 40px;
+    text-align: center;
+}
+
+.footer-coluna h3{
+ font-size: 16px;
+ text-transform: uppercase;
+ margin-bottom: 15px;
+ color:#fff;
+}
+
+.footer-coluna p{
+    font-size: 14px;
+    color: #ddd;
+    margin-bottom: 8px;
+}
+
+.footer-coluna p i{
+    margin-right: 6px;
+    color: #ff6b00;
+}
+
+.footer-subtexto{
+    font-style: italic;
+    min-width: 200px;
+    margin:0 auto 15px;
+}
+
+.footer-icones{
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+}
+
+.footer-icones a{
+    font-size: 20px;
+    color: #fff;
+    transition: color 0.3s ease;
+}
+
+.footer-icones a:hover{
+    color: #ff6b00;
+}
